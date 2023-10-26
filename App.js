@@ -22,7 +22,7 @@ export default function App() {
 
   // Configura la fuente predeterminada para todos los componentes Text
   Text.defaultProps = Text.defaultProps || {};
-  Text.defaultProps.style = { fontFamily: 'Phudu-Regular', color: '#fff', fontSize: '14px' };
+  Text.defaultProps.style = { fontFamily: 'Phudu-Regular', color: '#fff', fontSize: 14 };
 
   return (
     <NavigationContainer>

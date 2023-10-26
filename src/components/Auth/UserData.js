@@ -30,9 +30,9 @@ export default function UserData() {
       </View>
 
       <View style={styles.dataContent}>
-        <ItemMenu title="Nombre" text={`${auth.firstName} ${auth.lastName}`} />
-        <ItemMenu title="Username" text={auth.username} />
-        <ItemMenu title="Email" text={auth.email} />
+        <ItemMenu style={styles.dataContentItem} title="Nombre" text={`${auth.firstName} ${auth.lastName}`} />
+        <ItemMenu style={styles.dataContentItem} title="Username" text={auth.username} />
+        <ItemMenu style={styles.dataContentItem} title="Email" text={auth.email} />
         {/* <ItemMenu title="Total Favoritos" text={`${total} pokemons`} /> */}
       </View>
 
@@ -66,6 +66,9 @@ const styles = StyleSheet.create({
   },
   dataContent: {
     marginBottom: 20,
+  },
+  dataContentItem: {
+color: 'black'
   },
   itemMenu: {
     flexDirection: "row",
